@@ -1,0 +1,172 @@
+@import '@unocss/reset/tailwind.css';
+
+/* Main container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* File section styles */
+.files-section {
+  background-color: #1F2937;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.files-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/* Loading and empty states */
+.loading-text {
+  padding: 1.25rem;
+  text-align: center;
+  color: #9CA3AF;
+}
+
+.empty-text {
+  padding: 1.25rem;
+  text-align: center;
+  color: #9CA3AF;
+}
+
+/* File list styles */
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #2D3748;
+  border-radius: 0.5rem;
+  color: white;
+  position: relative;
+}
+
+.file-name {
+  font-size: 1rem;
+  color: white;
+}
+
+.file-info {
+  font-size: 0.875rem;
+  color: white;
+  margin-top: 0.25rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Button styles */
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-choose {
+  background-color: #5865f2 !important;
+  color: white !important;
+}
+
+.button-choose:hover {
+  background-color: #4752c4 !important;
+}
+
+.button-upload {
+  background-color: #2d7d46 !important;
+  color: white !important;
+}
+
+.button-upload:hover {
+  background-color: #215b32 !important;
+}
+
+.button-download {
+  background-color: #0EA5E9 !important;
+  color: white !important;
+}
+
+.button-download:hover {
+  background-color: #0284C7 !important;
+}
+
+.button-delete {
+  background-color: #EF4444 !important;
+  color: white !important;
+}
+
+.button-delete:hover {
+  background-color: #DC2626 !important;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  background: #1F2937;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 10;
+  min-width: 200px;
+  color: white;
+}
+
+.tooltip-item {
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.tooltip-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Animation */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
